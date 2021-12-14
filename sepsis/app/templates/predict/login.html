@@ -1,0 +1,71 @@
+{% extends 'predict/base.html' %}
+{% block content %}
+<main style="width:600px;padding-left:0;margin-left: 0px;margin-right: 0px;">
+   
+
+     
+
+    <!--Card-->
+    
+      <!--/.Card-->
+      <!--Card-->
+      <div class="card lighten-4 text-center z-depth-2 py-5 px-5s">
+        
+      <!-- Intro Section -->
+     <!-- Form with header -->
+                <!-- Material form register -->
+    <!-- Default form register -->
+    <!-- Default form login -->
+<form class="text-center border border-light p-5" method="" action="">
+  <!-- {% csrf_token %}
+  {{ form.as_p }} -->
+  
+  <p class="h4 mb-4">Sign in</p>
+
+  <!-- Email -->
+  <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Doctor ID" >
+
+  <!-- Password -->
+  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+
+  <div class="d-flex justify-content-around">
+      <div>
+          <!-- Remember me -->
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+              <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+          </div>
+      </div>
+      <div>
+          <!-- Forgot password -->
+          <a href="">Forgot password?</a>
+      </div>
+  </div>
+
+  <!-- Sign in button -->
+  <button class="btn btn-info btn-block my-4" ><a href="{% url 'upload' %}" >sign in</a></button>
+
+  <!-- Register -->
+  <p>Not a member?
+      <a href="">Register</a>
+  </p>
+
+  <!-- Social login -->
+  <p>or sign in with:</p>
+
+  <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+  <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+</form>
+<!-- Default form login -->
+    
+    
+    
+      
+    </div>
+  </div>
+      </main>
+
+{% endblock %}

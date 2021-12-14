@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="refresh" content="5;url=http://127.0.0.1:8000/result2.html"
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ title }}</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/024e10af69.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'bootstrap2.min.css' %}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'mdb2.min.css' %}">
+  <link rel="stylesheet" href="{% static 'sih.min.css' %}">
+  <!-- Your custom styles (optional) -->
+  <style>
+s
+        .Heading1{
+          padding-top:30px;
+          font-weight: 800;
+          font-size: 30px;
+          color : black;
+          font-weight: bold;
+          text-align: center;
+          font-family: Helvetica, sans-serif;
+        }
+           .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right;
+               }
+           a{
+               font-family: Helvetica;
+               font-size : 18px;
+         
+           }
+           .accordin .cardheader .collapsed .cc:after{
+               border-bottom-left-radius: 0px!important;
+               border-bottom-right-radius: 0px!important
+
+           }
+           
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+    
+}
+p{
+            
+            font-size : 16px;
+          
+          
+            font-family: Helvetica, sans-serif;
+          }
+          a{
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+          }
+          table td{
+              font-size:18px;
+          }
+      
+          .lis{
+            font-family: Helvetica, sans-serif;
+            padding-top:20px;
+            font-size: 18px;
+            text-align: justify;;
+          }
+          .a2:hover{
+            font-size: 16px;
+          }
+             .cc{
+                margin-top: 2px;
+                 border-radius: 10px!important
+             
+             }
+             .cb{
+                 margin-top:1px;
+                 background-color: white;
+                  border-bottom-left-radius: 10px;
+                      border-bottom-right-radius: 10px;
+                      border-top-left-radius: 0px;
+                 border-top-right-radius: 0px;
+                      
+             }
+  </style>
+</head>
+
+<body class="fixed-sn white-skin">
+
+  <!-- Main Navigation -->
+  <header>
+
+  
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+
+      <!-- SideNav slide-out button -->
+      <!-- <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+      </div> -->
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Sepsis Prediction</p>
+      </div>
+
+      <!-- Navbar links -->
+      <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown notifications-nav">
+          <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="badge red">3</span> <i class="fas fa-bell"></i>
+            <span class="d-none d-md-inline-block"></span>
+          </a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">
+              <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+              <span>Sepsis Details</span>
+              <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 13 min</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+              <span>Sepis Reports</span>
+              <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 33 min</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+              <span>Treatments</span>
+              <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 53 min</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Emergency Treatements</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Preliminary Test</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Profile</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Log Out</a>
+            <a class="dropdown-item" href="#">My account</a>
+          </div>
+        </li>
+
+      </ul>
+      <!-- Navbar links -->
+
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!-- Main Navigation -->
+
+  <!-- Main layout -->
+  <div style="background-color: #017697;height:200vh">
+    <center>
+        
+      <main>
+        <div class="container-fluid">
+    
+          <div class="card text-center mb-5 py-5">
+    
+            <div class="card-body">
+    
+              <h4 class="mb-4 dark-grey-text font-weight-bold"><strong>Result</strong></h4>
+    
+    <!--Card-->
+    <div class="card indigo text-center z-depth-5 light-version py-4 px-5" >
+    
+      
+        <hr class="w-100 my-4">
+      
+      
+      </div>
+      <!--/.Card-->
+      <!--Card-->
+      <div class="card mdb-color lighten-4 text-center z-depth-2 light-version py-4 px-5">
+        
+        <form class="md-form" class="mb-3">
+          
+        </form>
+      
+        <form class="md-form" class="mb-3">
+            <div class="file-field">
+                <div class="card text-center">
+                  <div class="spinner-border text-success" role="status">
+                   
+                    <span class="sr-only"></span>  
+                  </div>
+                  <h3 class="card-header primary-color white-text"> Analyzing Using Machine learning Model Level 1</h3>
+                 
+                   
+                  <h3 class="card-header primary-color white-text"> Analyzing Using Machine learning Model Level 2</h3>
+
+                  <h3 class="card-header primary-color white-text"> Analyzing Using Machine learning Model Level 3</h3>
+                 
+                 
+                    <!-- <div class="card-body">
+                      <p class="card-text">Click to review and confirm</p>
+                      <a href="https://mdbootstrap.com/docs/jquery/components/alerts/" target="_blank" class="btn btn-primary">Review and Confirm</a>
+                    </div> -->
+                  </div>
+                <!-- <div class="file-path-wrapper">
+                  <input class="file-path validate text-white" type="text" placeholder="Upload one or more files">
+                </div> -->
+              </div>
+        </form>
+      
+      
+      </div>
+      <!--/.Card-->
+            </div>
+    
+          </div>
+    
+          <!-- <div class="card text-center mb-5 py-5">
+    
+            <div class="card-body">
+    
+              <h4 class="mb-4 dark-grey-text font-weight-bold"><strong>Enter Report Manually</strong></h4>
+    
+    
+              <div class="mb-4"> -->
+    
+                <!-- <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-top-left'});">Top
+                  left</a> -->
+    
+                <!-- <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-top-center'});">Top
+                  Enter Blood Report Data</a>
+    
+                <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-top-right'});">
+                  Enter Urine Report Data</a>
+    
+              </div>
+    
+              <div class="mb-4"> -->
+    
+                <!-- <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-bottom-left'});">Bottom
+                  left</a> -->
+    
+                <!-- <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-bottom-center'});">Bottom
+                    Enter SCAN Report Data</a>
+    
+                <a class="btn btn-indigo" onclick="toastr.info('Hi! I am info message.', '', {positionClass: 'md-toast-bottom-right'});">Bottom
+                    Enter Physiological Report Data</a>
+    
+              </div>
+    
+            </div>
+    
+          </div> -->
+    
+          <!-- Section: Docs link -->
+          <!-- <section class="pb-5">
+    
+            Panel -->
+            <!-- <div class="card text-center">
+              <h3 class="card-header primary-color white-text">The Result Is POSITIVE</h3> -->
+              <!-- <div class="card-body">
+                <p class="card-text">Click to review and confirm</p>
+                <a href="https://mdbootstrap.com/docs/jquery/components/alerts/" target="_blank" class="btn btn-primary">Review and Confirm</a>
+              </div> -->
+            <!-- </div> --> 
+            <!-- Panel -->
+    
+          </section>
+          <!-- Section: Docs link -->
+    
+        </div>
+      </main>
+            
+</center>
+</div>
+  <!-- Main layout -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="{% static 'jquery-3.3.1.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'bootstrap.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'mdb.min.js' %}"></script>
+  <!-- Custom scripts -->
+  <script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+
+    var container = document.querySelector('.custom-scrollbar');
+    Ps.initialize(container, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+
+  </script>
+</body>
+
+</html>
